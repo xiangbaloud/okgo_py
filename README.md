@@ -1,2 +1,2 @@
 # okgo_py
-use Python to do something
+use Python2.7 here

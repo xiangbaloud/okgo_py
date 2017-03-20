@@ -1,4 +1,3 @@
-import requests
 #!/usr/bin/python
 
 import sys
@@ -15,7 +14,7 @@ def main():
     if len(sys.argv) > 1:
         argv = str(sys.argv[1])
         if argv == "all":
-            url_vol = "http://10.144.7.2/api/share/volumes"
+            url_vol = url
         else:
             vol_uuid = argv
             url_vol = "http://10.144.7.2/api/share/volumes/" + vol_uuid

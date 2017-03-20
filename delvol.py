@@ -6,7 +6,6 @@ import sys
 url = "http://10.144.7.2/api/share/volumes"
 key = {'X-AccelStor-API-Key':'4e40139db3e56759fd28ec3f542065eb9048020a'}
 
-vol_uuid = "a86488b0-4178-422f-bfbb-dce9d170b2b5"
 if len(sys.argv) == 1:
     print "[-] Usage: ./delvol.py <uuid>"
     exit()
@@ -20,5 +19,11 @@ else:
     response = session.delete(url_vol, headers=key)
     session.close()
 
-    print response
-    print response.content
+    #print response
+    #print response.content
+
+    message = str(response)
+
+    if "204" in message:
+        print "Delete Vol Successful"
+

@@ -12,7 +12,7 @@ session.trust_env = False
 
 #vol = {"size" : 1024, "alias" : "vol9", "type" : "block" }
 if len(sys.argv) == 1:
-    print "[-] Usage: ./createvol.py <'{\"identifier\" : \"san01\"}'>"
+    print "[-] Usage: ./createiscsitarget.py <'{\"identifier\" : \"san01\"}'>"
     exit()
 else:
     iscsi_target = json.loads(sys.argv[1])

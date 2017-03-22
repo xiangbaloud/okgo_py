@@ -11,7 +11,7 @@ session = requests.Session()
 session.trust_env = False
 
 if len(sys.argv) == 1:
-    print "[-] Usage: ./createvol.py <uuid> <'{\"alias\" : \"vol0\"}'>"
+    print "[-] Usage: ./clonevol.py <uuid> <'{\"alias\" : \"vol0\"}'>"
     exit()
 else:
     vol_id = str(sys.argv[1])

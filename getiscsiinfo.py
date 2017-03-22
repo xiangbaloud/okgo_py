@@ -4,7 +4,7 @@ import sys
 import requests
 
 def usage():
-    print('[-] Usage: ./getvolinfo.py <uuid>, if you want to display all vol, use <all>')
+    print('[-] Usage: ./getiscsiinfo.py <uuid>, if you want to display all targets, use <all>')
     exit(0)
 
 def main():

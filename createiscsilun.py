@@ -8,7 +8,7 @@ url = "http://10.144.7.2/api/share/iscsi/targets/"
 key = {'X-AccelStor-API-Key':'4e40139db3e56759fd28ec3f542065eb9048020a'}
 
 if len(sys.argv) == 1:
-    print "[-] Usage: ./createvol.py <target_uuid> <'{\"alias\" : \"vol01\", \"id\" : 0, \"iomode\" : \"wt\"}'>"
+    print "[-] Usage: ./createiscsilun.py <target_uuid> <'{\"alias\" : \"vol01\", \"id\" : 0, \"iomode\" : \"wt\"}'>"
     exit()
 else:
     iscsi_uuid = str(sys.argv[1])   

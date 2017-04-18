@@ -12,19 +12,23 @@ def multiplication(x, y):
 def division(x, y):
     return x / y
 
+def test():
+    print "oh"
+
+
 def main():
     print "Options:"
     print " 1) addition"
     print " 2) subtraction"
     print " 3) multiplication"
     print " 4) division"
-    option = input("select your option: ")
     options = [1, 2, 3, 4]
-    if option not in options:
-        print "invalid option" 
-        exit()
-    else:
-        pass        
+    while True:
+        option = input("select your option: ")
+        if option in options:
+            break
+        else:
+            print "invalid option"
     x = input("input your first number: ")
     y = input("input your second number: ")
     if option == 1:

@@ -24,13 +24,29 @@ def main():
     print " 4) division"
     options = [1, 2, 3, 4]
     while True:
-        option = input("select your option: ")
-        if option in options:
-            break
-        else:
+        try:
+            option = int(raw_input("select your option: "))
+        except ValueError:
             print "invalid option"
-    x = input("input your first number: ")
-    y = input("input your second number: ")
+        else:
+            if option in options:
+                break
+            else:
+                print "invalid option"
+    while True:
+        try:
+            x = int(raw_input("input your first number(0~99999999999999): "))
+        except ValueError:
+            print "invalid integer"
+        else:
+            break
+    while True:
+        try:
+            y = int(raw_input("input your second number(0~99999999999999): "))
+        except ValueError:
+            print "invalid integer"
+        else:
+            break
     if option == 1:
         print x, "+", y, "=", addition(x, y)
     elif option == 2:

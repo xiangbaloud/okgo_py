@@ -10,4 +10,4 @@ class Dise(object):
 
 d = Dise(6)
 d1 = Dise(6)
-print d.roll(), d1.roll()
+print(d.roll(), d1.roll())

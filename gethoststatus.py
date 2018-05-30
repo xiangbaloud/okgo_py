@@ -26,5 +26,5 @@ if len(sys.argv) > 1:
     msg = host(hostname).get_host_info() + " " + host(hostname).get_host_status()
     print(msg)
 else:
-    print("need host arguments")
+    print("[ERROR] Missing host arguments, e.g. ./" + sys.argv[0] + " www.google.com")
     exit(0)
